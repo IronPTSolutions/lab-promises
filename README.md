@@ -83,37 +83,51 @@ Running our tests with Mocha is super easy; you just have to run `npm test`.
 <!-- Before you run this command, make sure you navigate to the `starter-code` directory. -->
 
 ```
-$ npm test
+$ npm run test                                                                  ✔  10115  00:43:15
 
-> lab-intro-node@1.0.0 test /Users/Sandra/Desktop/iron-labs/lab-intro-node
+> lab-promises@1.0.0 test
 > mocha
 
 
-  SortedList
-    Constructor
-      1) should have items and length properties
-    #add(x)
-      2) should add a single value to SortedList
-      3) should add a third value to SortedList
-      4) should add a value while keeping the list sorted
-    #get(i)
-      5) should return an OutOfBounds exception if there is no element in that position
-      6) should return the element in that position
-    #max()
-      7) should return an EmptySortedList exception if there is no elements in the list
-      8) should return the max (highest) value in the list
-    #min()
-      9) should return an EmptySortedList exception if there are no elements in the list
-      10) should return the min (lowest) value in the list
-    #sum()
-      11) should return the sum of all elements in the list
-      12) should return 0 for an empty sorted list
-    #avg()
-      13) should return an EmptySortedList exception if there are no elements
-      14) should return the average of elements in the list
 
-  0 passing (13ms)
-  14 failing
+  Promises
+    number3
+      1) must return a Promise
+      2) must return a the number 3 as promise
+    error
+      3) must return a Promise
+      4) returns the message passed as failed promise
+    sum
+      5) must return a Promise
+      6) must returns the sum of numbers
+      7) must return a failed promise if the array is empty
+      8) must return a failed promise if the array is undefined
+    sum
+      9) must return a Promise
+      10) must returns the sum of numbers
+      11) must return a failed promise if the array is empty
+      12) must return a failed promise if the array is undefined
+    odds
+      13) must return a Promise
+      14) must returns odd numbers
+      15) must return a failed promise if the array is empty
+      16) must return a failed promise if the array is undefined
+    findUserById
+      17) must return a Promise
+      18) must return the user by id
+      19) must return undefined if the user not exists
+    findOrganizationById
+      20) must return a Promise
+      21) must return the user by id
+      22) must return undefined if the user not exists
+    findUserByIdWithOrganization
+      23) must return a Promise
+      24) must return the user by id
+      25) must return undefined if the user not exists
+
+
+  0 passing (18ms)
+  25 failing
 ```
 
 Don't worry that none of the tests are passing... you will make them ALL PASS!! :smile:
