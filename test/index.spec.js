@@ -78,25 +78,25 @@ describe('Promises', () => {
     });
   });
 
-  describe('odds', () => {
+  describe('odd', () => {
     it('must return a Promise', () => {
-      assert.equal(functions.odds([]) instanceof Promise, true);
+      assert.equal(functions.odd([]) instanceof Promise, true);
     });
 
     it('must returns odd numbers', () => {
-      return functions.odds([1, 2, 3])
-        .then(odds => assert.deepEqual(odds, [1, 3]))
+      return functions.odd([1, 2, 3])
+        .then(odd => assert.deepEqual(odd, [1, 3]))
         .catch(error => assert.fail(error))
     });
 
     it('must return a failed promise if the array is empty', () => {
-      return functions.odds([])
+      return functions.odd([])
         .then(() => assert.fail('This promise must fail if the array is empty!!'))
         .catch(error => assert.equal(error.message, 'Array must not be empty or undefined'))
     });
 
     it('must return a failed promise if the array is undefined', () => {
-      return functions.odds(undefined)
+      return functions.odd(undefined)
         .then(() => assert.fail('This promise must fail if the array is empty!!'))
         .catch(error => assert.equal(error.message, 'Array must not be empty or undefined'))
     });
