@@ -1,8 +1,16 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Promises
+<br>
+
+# LAB | Promises 2
+
+<br>
 
 ## Introduction
+
+The promise is a placeholder holding the result of an asynchronous operation. If the operation completes successfully, then the promise fulfills with the operation value, but if the operation fails: the promise rejects with the reason of the failure.
+
+Promises can also create chains, which are useful in handling multiple dependent async operations.
 
 ## Requirements
 
@@ -80,7 +88,6 @@ The `test` folder contains all the tests we will execute with Mocha.
 
 Running our tests with Mocha is super easy; you just have to run `npm test`.
 
-<!-- Before you run this command, make sure you navigate to the `starter-code` directory. -->
 
 ```
 $ npm run test                                                                  ✔  10115  00:43:15
@@ -95,35 +102,35 @@ $ npm run test                                                                 �
       1) must return a Promise
       2) must return a the number 3 as promise
     error
-      3) must return a Promise
-      4) returns the message passed as failed promise
+      1) must return a Promise
+      2) returns the message passed as failed promise
     sum
-      5) must return a Promise
-      6) must returns the sum of numbers
-      7) must return a failed promise if the array is empty
-      8) must return a failed promise if the array is undefined
+      1) must return a Promise
+      2) must returns the sum of numbers
+      3) must return a failed promise if the array is empty
+      4) must return a failed promise if the array is undefined
     sum
-      9) must return a Promise
-      10) must returns the sum of numbers
-      11) must return a failed promise if the array is empty
-      12) must return a failed promise if the array is undefined
-    odds
-      13) must return a Promise
-      14) must returns odd numbers
-      15) must return a failed promise if the array is empty
-      16) must return a failed promise if the array is undefined
+      1) must return a Promise
+      2)  must returns the sum of numbers
+      3)  must return a failed promise if the array is empty
+      4)  must return a failed promise if the array is undefined
+    odd
+      1)  must return a Promise
+      2)  must returns odd numbers
+      3)  must return a failed promise if the array is empty
+      4)  must return a failed promise if the array is undefined
     findUserById
-      17) must return a Promise
-      18) must return the user by id
-      19) must return undefined if the user not exists
+      1)  must return a Promise
+      2)  must return the user by id
+      3)  must return undefined if the user not exists
     findOrganizationById
-      20) must return a Promise
-      21) must return the user by id
-      22) must return undefined if the user not exists
+      1)  must return a Promise
+      2)  must return the user by id
+      3)  must return undefined if the user not exists
     findUserByIdWithOrganization
-      23) must return a Promise
-      24) must return the user by id
-      25) must return undefined if the user not exists
+      1)  must return a Promise
+      2)  must return the user by id
+      3)  must return undefined if the user not exists
 
 
   0 passing (18ms)
@@ -149,9 +156,9 @@ Must return the message passed as failed promise.
 - Must return the sum of numbers as a promise. 
 - Must fail the promise if the array is empty or undefined `new Error('Array must not be empty or undefined')`.
 
-### Iteration 4: odds(numbers)
+### Iteration 4: odd(numbers)
 
-- Must return only odds' numbers. 
+- Must return only odd numbers. 
 - Must fail the promise if the array is empty or undefined `new Error('Array must not be empty or undefined')`.
 
 ### Iteration 5: findUserById(id)
@@ -179,5 +186,7 @@ Example: `findUserByIdWithOrganization(3)`
   }
 }
 ```
+
+<br>
 
 Happy Coding! :heart:
